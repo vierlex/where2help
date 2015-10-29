@@ -1,0 +1,6 @@
+de:
+  needs_helper:
+    txt_stillneed: 'Wir brauchen noch %{vcount} Helfer'
+    txt_comeat: 'Bitte komm um %{time}'
+    action_help: Helfen
+    action_cancel: Absagen
