@@ -14,3 +14,8 @@ de:
     nav_personal:
       profile: Profil
       sign_out: Abmelden
+  pages:
+    home:
+      welcome: Die einfachste Lösung um freiwillige Helfer zu organisieren.
+      btn_user: Als Helfer registrieren
+      btn_ngo: Als NGO registrieren

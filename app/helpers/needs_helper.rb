@@ -29,8 +29,8 @@ module NeedsHelper
     volunteering = need.volunteerings.find_by_user_id(current_user)
     #open = need.volunteerings.count < need.volunteers_needed
     { url: volunteering ? volunteering_path(volunteering) : volunteerings_path(need_id: need.id),
-      txt: volunteering ? "Bitte komm um #{I18n.localize(need.start_time, format:'%H:%M')}" : "Wir brauchen noch #{[0, need.volunteers_needed - need.volunteerings_count].max} Helfer",
-      action: volunteering ? 'Absagen' : 'Helfen',
+      txt: volunteering ? I18n.t('needs_helper.txt_comeat', time: I18n.localize(need.start_time, format:'%H:%M')) : I18n.t('needs_helper.txt_stillneed', vcount: [0, need.volunteers_needed - need.volunteerings_count].max),
+      action: volunteering ? I18n.t('needs_helper.action_cancel') : I18n.t('needs_helper.action_help'),
       #icon: volunteering ? 'fa fa-times' : 'fa fa-check',
       method: volunteering ? :delete : :post,
       class: volunteering ? 'btn-active' : nil
