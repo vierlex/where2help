@@ -1,4 +1,9 @@
 de:
+  admin_mailer:
+    ngo_confirmation_request:
+      header: 'NGO Account Anfrage von %{name}!'
+      phone: Telefon
+      activate: 'Bitte überprüfen und ggf. Freischalten: %{link}'
   application:
     nav:
       sign_up: Anmelden
@@ -16,6 +21,6 @@ de:
       sign_out: Abmelden
   pages:
     home:
-      welcome: Die einfachste Lösung um freiwillige Helfer zu organisieren.
+      welcome: 'Die einfachste Lösung um freiwillige Helfer zu organisieren.'
       btn_user: Als Helfer registrieren
       btn_ngo: Als NGO registrieren
